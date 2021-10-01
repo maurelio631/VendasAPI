@@ -5,13 +5,20 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "index.js"
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maurelio631/VendasAPI.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maurelio631/VendasAPI/issues"
+  },
+  "homepage": "https://github.com/maurelio631/VendasAPI#readme",
   "dependencies": {
-    "express": "^4.17.1",
-    "uuid": "^8.3.2"
+    "express": "^4.17.1"
   }
 }

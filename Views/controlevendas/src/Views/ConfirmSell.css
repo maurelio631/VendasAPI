@@ -1,0 +1,8 @@
+.Container{
+    display: flex;
+    flex-direction: column;
+}
+.Container h2{
+    margin-left: 15px;
+    margin-right: 15px;
+}

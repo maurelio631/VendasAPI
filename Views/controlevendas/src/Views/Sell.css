@@ -1,0 +1,25 @@
+.Container{
+    height: 500px;
+    overflow-y: auto;
+    flex-direction: row;
+    width: auto;
+}
+
+.Cart{
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+}
+
+.SellDiv{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 20px;
+}
+div h2{
+    text-align: center;
+}
+div h4{
+    text-align: center;
+}

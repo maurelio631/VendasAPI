@@ -1,19 +1,19 @@
 import React from "react";
-import "./ControlProducts.css";
+import styles from "./ControlProducts.module.css";
 
 const ControlProducts = (props) => {
   return (
-    <div className="Canvas">
-      <div className="Container">
+    <div className={styles.Canvas}>
+      <div className={styles.Container}>
         <h2>Cadastrar/Editar Produto</h2>
         <label>Nome do Produto</label>
-        <input/>
+        <input />
         <label>Descrição</label>
-        <textarea/>
+        <textarea />
         <label>Quantidade</label>
-        <input type="number" defaultValue="1"/>
+        <input type="number" defaultValue="1" />
         <label>Preço</label>
-        <input type="number"/>
+        <input type="number" />
         <button>Cancelar</button>
         <button>Confirmar</button>
       </div>

@@ -1,10 +1,10 @@
 import React from "react";
-import "./ConfirmSell.css"
+import styles from  "./ConfirmSell.module.css"
 
 const ConfirmSell = ()=>{
     return(
-        <div className="Canvas">
-            <div className="Container">
+        <div className={styles.Canvas}>
+            <div className={styles.Container}>
                 <h2>Seu pedido foi realizado com sucesso!</h2>
                 <button>Voltar ao menu principal</button>
             </div>

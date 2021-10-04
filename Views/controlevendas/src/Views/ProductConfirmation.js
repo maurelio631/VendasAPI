@@ -1,9 +1,10 @@
 import React from "react";
-import "./ProductConfirmation.css";
+import styles from "./ProductConfirmation.module.css";
+
 const ProductConfirmation = (props) => {
   return (
-    <div className="Canvas">
-      <div className="Container">
+    <div className={styles.Canvas}>
+      <div className={styles.Container}>
         <h2>Produto cadastrado com sucesso!</h2>
         <p>Nome do produto</p>
         <button>Ver lista de produtos</button>

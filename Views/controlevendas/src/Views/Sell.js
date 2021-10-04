@@ -1,11 +1,11 @@
 import React from "react";
-import "./Sell.css";
+import styles from "../../src/Views/Sell.module.css";
 
 const Sell = (props) => {
   return (
-    <div className="Canvas">
-      <div className="Container">
-        <div className="SellDiv">
+    <div className={styles.Canvas}>
+      <div className={styles.Container}>
+        <div className={styles.SellDiv}>
           <h2>Comprar</h2>
           <label>Nome</label>
           <input />
@@ -17,7 +17,7 @@ const Sell = (props) => {
           <input />
           <button>Adicionar ao carrinho</button>
         </div>
-        <div className="Cart">
+        <div className={styles.Cart}>
           <h2>Carrinho</h2>
           <label>
             Nome <span>Quantidade</span> <span>Estoque</span> <span>Preço</span>

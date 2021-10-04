@@ -1,21 +1,6 @@
-label {
-  font-family: "Poppins";
-  color: #145468;
-  font-weight: 500;
+h2{
+    color: #145468;
 }
-
-input {
-  height: 20px;
-  margin-bottom: 10px;
-  border-color: transparent;
-  box-shadow: 2px 2px 2px #145468;
-}
-
-textarea {
-  border-color: transparent;
-  box-shadow: 2px 2px 2px #145468;
-}
-
 .Canvas {
   display: flex;
   justify-content: center;
@@ -30,8 +15,21 @@ textarea {
   align-items: center;
   justify-content: center;
   height: auto;
-  width: 400px;
+  width: auto;
   background-color: white;
   border-radius: 30px;
   min-height: 300px;
+}
+
+.Container button{
+    height: 40px;
+    width: 200px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 5px;
+    border-color: transparent;
+    box-shadow:2px 2px 2px 2px #145468;
+    color: #145468;
+    font-weight: bold;
+    cursor: pointer;
 }

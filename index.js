@@ -1,11 +1,13 @@
 import express from "express";
+import cors from "cors"
 import productsRoutes from "./Routes/products.routes.js";
 
 const app = express();
 const PORT = 5000;
 
-app.use(express.json());
-
+app.use(express.json({limit:"30mb"}));
+app.use(express.urlencoded({limit:"30mb",extended:true}));
+app.use(cors());
 app.use('/products', productsRoutes);
 
 app.get('/', (req,res)=>res.send("You're into the root directory"))

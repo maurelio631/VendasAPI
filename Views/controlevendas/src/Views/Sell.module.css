@@ -1,0 +1,54 @@
+h2{
+  color: #145468;
+}
+.Canvas {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+width: 100vw;
+background-color: #145468;
+}
+.Container {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+height: auto;
+width: auto;
+background-color: white;
+border-radius: 30px;
+min-height: 300px;
+}
+.Container button{
+  height: 40px;
+  width: 200px;
+  margin: 10px;
+  background-color: white;
+  border-radius: 5px;
+  border-color: transparent;
+  box-shadow:2px 2px 2px 2px #145468;
+  color: #145468;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.SellDiv h2 {
+  margin-top: 70px;
+}
+
+.Cart {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+}
+
+.SellDiv {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 20px;
+}
+div h2 {
+  text-align: center;
+}

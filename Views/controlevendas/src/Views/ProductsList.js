@@ -2,6 +2,12 @@ import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { getProducts } from "../Actions/products.actions";
 import { useSelector } from "react-redux";
+import {
+  Switch,
+  Link,
+  useHistory,
+  BrowserRouter as Router,
+} from "react-router-dom";
 import styles from "./ProductsList.module.css";
 
 const ProductsList = (props) => {
@@ -17,41 +23,48 @@ const ProductsList = (props) => {
     <p key={product.toString()}> {product}</p>;
   });
 
+  const history = useHistory();
+
   return (
-    <div className={styles.Canvas}>
-      <div className={styles.Container}>
-        <h2>Estoque</h2>
+    <Switch>
+      <div className={styles.Canvas}>
+        <div className={styles.Container}>
+          <h2>Estoque</h2>
 
-        <table>
-          <thead>
-            <tr>
-              <th>Id</th>
-              <th>Nome</th>
-              <th>Descrição</th>
-              <th>Quantidade</th>
-              <th>Preço</th>
-            </tr>
-          </thead>
+          <table>
+            <thead>
+              <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>Descrição</th>
+                <th>Quantidade</th>
+                <th>Preço</th>
+              </tr>
+            </thead>
 
-          <tbody>
-            {products.map((product) => {
-              return (
-                <tr>
-                  <td>{product.id}</td> 
-                  <td>{product.name}</td> 
-                  <td>{product.description}</td>
-                  <td>{product.amount}</td>
-                  <td>{product.price}</td>
-                </tr>
-              );
-            })}
-          </tbody>
-        </table>
+            <tbody>
+              {products.map((product) => {
+                return (
+                  <tr>
+                    <td>{product.id}</td>
+                    <td>{product.name}</td>
+                    <td>{product.description}</td>
+                    <td>{product.amount}</td>
+                    <td>{product.price}</td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
 
-        <div></div>
-        <button>Começar Expediente</button>
+          <div></div>
+          <Link to="/Sell">
+            <button>Começar Expediente</button>
+          </Link>
+            <button onClick={() => history.goBack()}>Voltar</button>
+        </div>
       </div>
-    </div>
+    </Switch>
   );
 };
 export default ProductsList;

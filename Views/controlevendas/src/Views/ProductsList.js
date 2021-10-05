@@ -23,6 +23,8 @@ const ProductsList = (props) => {
     <p key={product.toString()}> {product}</p>;
   });
 
+  //Função que tem como objetivo receber os dados do backend e tratá-los para mostrar da forma desejada
+
   const history = useHistory();
 
   return (

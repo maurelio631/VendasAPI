@@ -19,9 +19,7 @@ const ProductsList = (props) => {
   const products = useSelector((state) => state.products);
   console.log(products);
 
-  const ListedProducts = products.map((product) => {
-    <p key={product.toString()}> {product}</p>;
-  });
+  
 
   //Função que tem como objetivo receber os dados do backend e tratá-los para mostrar da forma desejada
 
